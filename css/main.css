@@ -656,3 +656,64 @@ section {
 @media (max-width: 768px) {
   .diferenciais__grid { grid-template-columns: 1fr; }
 }
+
+/* ========================
+   ÁREA DE ATUAÇÃO
+======================== */
+.atuacao {
+  background: var(--azul-profundo);
+}
+
+.atuacao__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.atuacao__lista {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.atuacao__lista li {
+  color: rgba(255,255,255,0.75);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.atuacao__mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa-brasil {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(19,99,223,0.3));
+}
+
+.estado {
+  fill: #1363DF;
+  fill-opacity: 0.7;
+  stroke: rgba(255,255,255,0.25);
+  stroke-width: 1.5;
+  transition: fill-opacity var(--transition);
+}
+
+.estado:hover {
+  fill-opacity: 1;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .atuacao__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mapa-brasil { max-width: 320px; }
+}
