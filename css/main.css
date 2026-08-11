@@ -416,3 +416,58 @@ section {
 
   .hero__badge { font-size: 0.65rem; }
 }
+
+/* ========================
+   NÚMEROS
+======================== */
+.numeros {
+  background: var(--branco);
+  padding-block: 4rem;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.numeros__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+}
+
+.numeros__item {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.numeros__item:hover {
+  background: var(--azul-claro);
+}
+
+.numeros__valor {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  color: var(--azul-medio);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.numeros__label {
+  font-size: var(--fs-sm);
+  color: var(--cinza-texto);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .numeros__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .numeros__grid {
+    grid-template-columns: 1fr;
+  }
+}
