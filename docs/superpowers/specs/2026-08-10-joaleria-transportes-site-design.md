@@ -103,12 +103,19 @@ A Joaleria Transportes é uma transportadora brasileira com 40 anos de atuação
 - Fundo `#F7F9FC`
 - Formulário: Nome · E-mail · Assunto · Mensagem + botão enviar (ação `mailto:`)
 - Coluna lateral: endereço, telefone, e-mail, horário de atendimento
-- Google Maps embed simples (iframe) — opcional/placeholder
+- Dados reais de contato:
+  - **E-mail:** administrativo@joaleria.com
+  - **Telefone fixo:** (11) 2421-3822
+  - **WhatsApp/Celular:** (11) 94780-8480 / (11) 97859-7689
+  - **Endereço:** Rua Rio Grande do Piauí, 228 - Cidade Aracília, Guarulhos - SP, CEP 07250-250
+- Google Maps embed simples (iframe) com o endereço acima
 
 ### 10. Footer
 - Fundo `#0B2545`, texto branco
 - Logo + tagline
-- CNPJ e endereço
+- Endereço: Rua Rio Grande do Piauí, 228 - Cidade Aracília, Guarulhos - SP, CEP 07250-250
+- Telefones: (11) 2421-3822 · (11) 94780-8480 · (11) 97859-7689
+- E-mail: administrativo@joaleria.com
 - Links rápidos
 - Copyright 2026
 
