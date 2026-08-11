@@ -186,18 +186,10 @@ section {
   flex-shrink: 0;
 }
 
-.nav__logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--azul-medio);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 1.25rem;
-  color: var(--azul-profundo);
-  line-height: 1;
+.nav__logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav__logo-text {
