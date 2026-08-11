@@ -8,6 +8,10 @@ body {
   background: var(--branco);
 }
 
+:target {
+  scroll-margin-top: 80px;
+}
+
 .container {
   width: 100%;
   max-width: var(--container);
