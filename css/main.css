@@ -717,3 +717,90 @@ section {
 
   .mapa-brasil { max-width: 320px; }
 }
+
+/* ========================
+   TRABALHE CONOSCO
+======================== */
+.trabalhe {
+  background: var(--cinza-claro);
+}
+
+.trabalhe__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.trabalhe__header .section-label,
+.trabalhe__header .section-desc {
+  display: block;
+  margin-inline: auto;
+}
+
+.trabalhe__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.trabalhe__card {
+  background: var(--branco);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trabalhe__card-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--azul-claro);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trabalhe__card-icon svg { width: 28px; height: 28px; }
+
+.trabalhe__card-title {
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  color: var(--azul-profundo);
+}
+
+.trabalhe__card-desc {
+  font-size: var(--fs-sm);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+}
+
+.trabalhe__card-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  flex: 1;
+}
+
+.trabalhe__card-lista li {
+  font-size: var(--fs-sm);
+  color: var(--cinza-texto);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.trabalhe__card-lista li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--azul-medio);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .trabalhe__grid { grid-template-columns: 1fr; }
+}
