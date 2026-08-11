@@ -1,1 +1,117 @@
-/* main.css — estilos da página */
+/* ========================
+   BASE
+======================== */
+body {
+  font-family: var(--font);
+  font-size: var(--fs-base);
+  color: var(--cinza-texto);
+  background: var(--branco);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2rem);
+}
+
+section {
+  padding-block: var(--section-py);
+}
+
+.section-label {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--azul-medio);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--azul-profundo);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.section-title--white {
+  color: var(--branco);
+}
+
+.section-desc {
+  font-size: var(--fs-lg);
+  color: var(--cinza-texto);
+  max-width: 56ch;
+  line-height: 1.7;
+}
+
+.section-desc--white {
+  color: rgba(255,255,255,0.8);
+}
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+  background: var(--azul-medio);
+  color: var(--branco);
+}
+
+.btn-primary:hover {
+  background: #0f52c0;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--branco);
+  border-color: rgba(255,255,255,0.5);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--branco);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--azul-profundo);
+  border-color: var(--azul-profundo);
+}
+
+.btn-outline-dark:hover {
+  background: var(--azul-profundo);
+  color: var(--branco);
+}
+
+/* Fade-in via IntersectionObserver */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
