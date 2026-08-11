@@ -79,5 +79,24 @@ function initCounters() {
 }
 
 function initFadeIn() {
-  // implemented in Task 13
+  const elements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const siblings = [...entry.target.parentElement.querySelectorAll('.fade-in')];
+        const index = siblings.indexOf(entry.target);
+        const delay = index * 80;
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  elements.forEach(el => observer.observe(el));
 }
