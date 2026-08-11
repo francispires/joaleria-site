@@ -320,7 +320,85 @@
     </div>
   </div>
 </section>
-  <!-- CONTATO -->
+  <section class="contato" id="contato">
+  <div class="container contato__inner">
+    <div class="contato__info fade-in">
+      <span class="section-label">Entre em contato</span>
+      <h2 class="section-title">Fale com a Joaleria</h2>
+      <p class="section-desc">Nossa equipe está pronta para atender você de segunda a sexta, das 8h às 18h.</p>
+      <div class="contato__dados">
+        <div class="contato__dado">
+          <div class="contato__dado-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Endereço</strong>
+            <p>Rua Rio Grande do Piauí, 228<br>Cidade Aracília — Guarulhos, SP<br>CEP 07250-250</p>
+          </div>
+        </div>
+        <div class="contato__dado">
+          <div class="contato__dado-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011 1.18 2 2 0 012.96 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <strong>Telefones</strong>
+            <p><a href="tel:+551124213822">(11) 2421-3822</a></p>
+            <p><a href="tel:+5511947808480">(11) 94780-8480</a></p>
+            <p><a href="tel:+5511978597689">(11) 97859-7689</a></p>
+          </div>
+        </div>
+        <div class="contato__dado">
+          <div class="contato__dado-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <strong>E-mail</strong>
+            <p><a href="mailto:administrativo@joaleria.com">administrativo@joaleria.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contato__form-wrap fade-in">
+      <form class="contato__form" action="mailto:administrativo@joaleria.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="Nome" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="Email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="Telefone" placeholder="(11) 00000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="Assunto">
+            <option value="">Selecione...</option>
+            <option value="Orçamento de Frete">Orçamento de Frete</option>
+            <option value="Parceria Comercial">Parceria Comercial</option>
+            <option value="Trabalhe Conosco">Trabalhe Conosco</option>
+            <option value="Outros">Outros</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="Mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          Enviar Mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
   <!-- FOOTER -->
   <script src="js/main.js"></script>
 </body>
