@@ -8,6 +8,7 @@
   <meta property="og:title" content="Joaleria Transportes — 40 Anos Movendo o Brasil" />
   <meta property="og:description" content="Transportadora especializada em logística de produtos de higiene e papel com cobertura nacional." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
   <title>Joaleria Transportes</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="css/reset.css" />
@@ -29,7 +30,7 @@
         <a href="#contato" class="nav__link">Contato</a>
       </nav>
       <a href="#contato" class="btn btn-primary nav__cta">Fale Conosco</a>
-      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -300,7 +301,7 @@
           <li>Experiência em cargas</li>
           <li>Disponibilidade para viagens</li>
         </ul>
-        <a href="mailto:administrativo@joaleria.com?subject=Currículo - Motorista" class="btn btn-primary">Enviar Currículo</a>
+        <a href="mailto:administrativo@joaleria.com?subject=Curr%C3%ADculo%20-%20Motorista" class="btn btn-primary">Enviar Currículo</a>
       </div>
       <div class="trabalhe__card fade-in">
         <div class="trabalhe__card-icon" aria-hidden="true">
@@ -319,7 +320,7 @@
           <li>Conhecimento em informática</li>
           <li>Perfil colaborativo e dinâmico</li>
         </ul>
-        <a href="mailto:administrativo@joaleria.com?subject=Currículo - Área Administrativa" class="btn btn-outline-dark">Enviar Currículo</a>
+        <a href="mailto:administrativo@joaleria.com?subject=Curr%C3%ADculo%20-%20%C3%81rea%20Administrativa" class="btn btn-outline-dark">Enviar Currículo</a>
       </div>
     </div>
   </div>
@@ -369,7 +370,7 @@
       </div>
     </div>
     <div class="contato__form-wrap fade-in">
-      <form class="contato__form" action="mailto:administrativo@joaleria.com" method="post" enctype="text/plain">
+      <form class="contato__form" id="contatoForm" novalidate>
         <div class="form-group">
           <label for="nome">Nome completo</label>
           <input type="text" id="nome" name="Nome" placeholder="Seu nome" required />
@@ -396,9 +397,10 @@
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="Mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+        <button type="submit" class="btn btn-primary btn--full">
           Enviar Mensagem
         </button>
+        <p class="form-fallback">Ou envie direto para <a href="mailto:administrativo@joaleria.com">administrativo@joaleria.com</a></p>
       </form>
     </div>
   </div>

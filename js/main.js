@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCounters();
   initFadeIn();
+  initContactForm();
 });
 
 function initNav() {
@@ -21,7 +22,7 @@ function initMobileMenu() {
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
@@ -47,10 +48,18 @@ function initMobileMenu() {
 function initCounters() {
   const counters = document.querySelectorAll('[data-target]');
 
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   const animate = (el) => {
     const target = parseInt(el.dataset.target, 10);
     const prefix = el.dataset.prefix || '';
     const suffix = el.dataset.suffix || '';
+
+    if (reducedMotion) {
+      el.textContent = prefix + target + suffix;
+      return;
+    }
+
     const duration = 1800;
     const start = performance.now();
 
@@ -76,6 +85,28 @@ function initCounters() {
   }, { threshold: 0.4 });
 
   counters.forEach(el => observer.observe(el));
+}
+
+function initContactForm() {
+  const form = document.getElementById('contatoForm');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const nome = form.querySelector('[name="Nome"]').value.trim();
+    const email = form.querySelector('[name="Email"]').value.trim();
+    const telefone = form.querySelector('[name="Telefone"]').value.trim();
+    const assunto = form.querySelector('[name="Assunto"]').value;
+    const mensagem = form.querySelector('[name="Mensagem"]').value.trim();
+
+    if (!nome || !email || !mensagem) return;
+
+    const subject = encodeURIComponent(assunto || 'Contato via site');
+    const body = encodeURIComponent(
+      `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone || 'Não informado'}\n\n${mensagem}`
+    );
+    window.location.href = `mailto:administrativo@joaleria.com?subject=${subject}&body=${body}`;
+  });
 }
 
 function initFadeIn() {
