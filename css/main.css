@@ -29,7 +29,9 @@ section {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--azul-medio);
+  color: var(--azul-profundo);
+  border-left: 3px solid var(--azul-medio);
+  padding-left: 0.625rem;
   margin-bottom: 0.75rem;
 }
 
@@ -84,11 +86,12 @@ section {
 
 .btn-primary {
   background: var(--azul-medio);
-  color: var(--branco);
+  color: var(--azul-profundo);
 }
 
 .btn-primary:hover {
-  background: #0f52c0;
+  background: var(--dourado);
+  color: var(--azul-profundo);
 }
 
 .btn-outline {
@@ -163,7 +166,7 @@ section {
 }
 
 .nav.scrolled {
-  background: rgba(11, 37, 69, 0.92);
+  background: rgba(26, 26, 26, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(255,255,255,0.08);
@@ -193,7 +196,7 @@ section {
   justify-content: center;
   font-weight: 900;
   font-size: 1.25rem;
-  color: var(--branco);
+  color: var(--azul-profundo);
   line-height: 1;
 }
 
@@ -309,10 +312,10 @@ section {
       -45deg,
       transparent,
       transparent 40px,
-      rgba(19, 99, 223, 0.06) 40px,
-      rgba(19, 99, 223, 0.06) 41px
+      rgba(245, 194, 0, 0.04) 40px,
+      rgba(245, 194, 0, 0.04) 41px
     ),
-    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(19, 99, 223, 0.15) 0%, transparent 70%);
+    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(245, 194, 0, 0.10) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -329,9 +332,9 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(19, 99, 223, 0.2);
-  border: 1px solid rgba(19, 99, 223, 0.4);
-  color: #93bbff;
+  background: rgba(245, 194, 0, 0.15);
+  border: 1px solid rgba(245, 194, 0, 0.4);
+  color: var(--azul-medio);
   font-size: var(--fs-xs);
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -479,7 +482,7 @@ section {
 .numeros__valor {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
-  color: var(--azul-medio);
+  color: var(--azul-profundo);
   letter-spacing: -0.03em;
   line-height: 1;
   margin-bottom: 0.5rem;
@@ -528,13 +531,13 @@ section {
 
 .sobre__tag {
   background: var(--azul-claro);
-  color: var(--azul-medio);
+  color: var(--azul-profundo);
   font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: 0.04em;
   padding: 0.375rem 0.875rem;
   border-radius: 2rem;
-  border: 1px solid rgba(19, 99, 223, 0.2);
+  border: 1px solid rgba(201, 160, 0, 0.3);
 }
 
 .sobre__placeholder {
@@ -598,7 +601,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.25rem;
-  color: var(--azul-medio);
+  color: var(--azul-profundo);
 }
 
 .servico-card__icon svg {
@@ -726,11 +729,11 @@ section {
   width: 100%;
   max-width: 420px;
   height: auto;
-  filter: drop-shadow(0 8px 32px rgba(19,99,223,0.3));
+  filter: drop-shadow(0 8px 32px rgba(245,194,0,0.25));
 }
 
 .estado {
-  fill: #1363DF;
+  fill: #F5C200;
   fill-opacity: 0.7;
   stroke: rgba(255,255,255,0.25);
   stroke-width: 1.5;
@@ -796,6 +799,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--azul-profundo);
 }
 
 .trabalhe__card-icon svg { width: 28px; height: 28px; }
@@ -874,7 +878,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--azul-medio);
+  color: var(--azul-profundo);
 }
 
 .contato__dado-icon svg { width: 18px; height: 18px; }
@@ -937,8 +941,8 @@ section {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--azul-medio);
-  box-shadow: 0 0 0 3px rgba(19,99,223,0.12);
+  border-color: var(--dourado);
+  box-shadow: 0 0 0 3px rgba(201,160,0,0.18);
 }
 
 .form-group input::placeholder,

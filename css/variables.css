@@ -1,12 +1,12 @@
 :root {
-  /* Cores */
-  --azul-profundo: #0B2545;
-  --azul-medio: #1363DF;
-  --azul-claro: #E8F0FE;
+  /* Cores — identidade Joaleria Transportes (carvão + amarelo dourado) */
+  --azul-profundo: #1A1A1A;
+  --azul-medio: #F5C200;
+  --azul-claro: #FFF8DC;
   --branco: #FFFFFF;
-  --cinza-texto: #4A5568;
-  --cinza-claro: #F7F9FC;
-  --dourado: #C9A844;
+  --cinza-texto: #4A4A4A;
+  --cinza-claro: #F5F4F0;
+  --dourado: #C9A000;
 
   /* Tipografia */
   --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -29,9 +29,9 @@
   --radius-lg: 1.25rem;
 
   /* Sombras */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-md: 0 4px 16px rgba(0,0,0,.10);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,.14);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.10), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.14);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.20);
 
   /* Transição */
   --transition: 0.25s ease;
